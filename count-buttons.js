@@ -8,9 +8,9 @@ export default function App() {
 
    return (
       <div>
-        <button onClick={() => setCount(count + 1)}>Increase</button>
+        <button onClick={() => setCount(count + 1 && "Count Changed")}>Increase</button>
        // Using JSX to increase the count.
-        <button onClick={() => setCount(count > 0 && count - 1)}>Decrease</button>
+        <button onClick={() => setCount(count > 0 && count - 1 && "Count Changed")}>Decrease</button>
         // Using a built in conditional statement to decrease the count but not go below 0.
         <div>{count}</div>
       </div>

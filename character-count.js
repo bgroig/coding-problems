@@ -20,7 +20,7 @@ const letterCount = str => {
       letter = "";
       } 
       //return finalCount
-     } console.log(finalCount);
+     } return finalCount;
   }
 }
 
