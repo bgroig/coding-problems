@@ -1,0 +1,11 @@
+//function to add items to an object
+const addToObject = ((obj, name, num) => {
+  if(obj && typeof(obj) === "object" && name && typeof(name) === "string" && num && typeof(num) === "number") {
+    obj[name] = num;
+    return obj;
+  }
+})
+
+addToObject({piano: 500, stereo: 300}, "Caligula", 440);
+
+//https://stackoverflow.com/questions/1168807/how-can-i-add-a-key-value-pair-to-a-javascript-object
